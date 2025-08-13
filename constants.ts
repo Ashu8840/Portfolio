@@ -4,7 +4,7 @@ import type { Project, EducationItem, SkillCategory } from './types';
 export const PERSONAL_INFO = {
   name: "Ayush Tripathi",
   title: "Software Development Intern",
-  image: "https://i.postimg.cc/zX3D5R3b/Untitled-design-2.png",
+  image: "https://photos.google.com/u/1/photo/AF1QipPDGOCLPubcAJFq3QHV85MKBLXqjNIao9SaOoiX",
   profile: "Motivated and detail-oriented B.Tech student specializing in Information Technology, seeking an opportunity to apply my technical skills in a dynamic work environment. Passionate about problem-solving, software development, and continuous learning.",
   email: "ayush.bhrg@gmail.com",
   linkedin: "https://linkedin.com/in/ayush8840",

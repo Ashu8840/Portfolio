@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../../constants';
@@ -27,6 +28,14 @@ const Hero = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
   ];
+  
+  const placeholderSrc = `data:image/svg+xml;base64,${btoa(`
+  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+    <circle cx="48" cy="48" r="48" fill="#6366f1"/>
+    <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-size="40" font-family="Inter, sans-serif" font-weight="bold" fill="#fff" dy=".1em">AT</text>
+  </svg>
+  `)}`;
+
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
@@ -48,10 +57,15 @@ const Hero = () => {
            <motion.img 
             src={PERSONAL_INFO.image} 
             alt="Ayush Tripathi" 
-            className="rounded-full h-24 w-24 border-2 border-primary"
+            className="rounded-full h-24 w-24 border-2 border-primary object-cover"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+            onError={(e) => {
+              if (e.currentTarget.src !== placeholderSrc) {
+                e.currentTarget.src = placeholderSrc;
+              }
+            }}
             />
           <div>
             <motion.h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl" variants={itemVariants}>
