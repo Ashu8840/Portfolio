@@ -1,20 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🌐 Personal Portfolio – MERN Stack
 
-# Run and deploy your AI Studio app
+A personal portfolio website built using the **MERN Stack** to showcase my skills, projects, achievements, and contact details.  
+This portfolio serves as a professional online presence for recruiters, collaborators, and potential clients.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
+- Responsive and modern UI
+- About Me section with personal introduction
+- Skills and Technology Stack showcase
+- Projects section with live demo and GitHub links
+- Contact form (backend API integrated)
+- Dynamic content fetching from MongoDB
+- SEO-friendly design
 
-View your app in AI Studio: https://ai.studio/apps/drive/1WFZMoeYBmxE2w5aJmTSUmp564nrew3yM
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS (or Bootstrap/CSS), Axios
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Mongoose)
+- **Other Tools:** Nodemon, Git, GitHub, dotenv
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:**  Node.js,React
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
